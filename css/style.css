@@ -1,0 +1,52 @@
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
+}
+
+.imagenboton {
+	box-shadow: 8px -8px 0 -2px #8AEB32, 8px -8px 0 0 black;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.imagenboton:hover {
+	box-shadow: 4px -4px 0 -2px #8AEB32, 4px -4px 0 0 black;
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+
+@media(max-width: 770px) {
+	.reversed {
+		/*flex-direction: column-reverse;*/
+    		display: flex;
+		flex-flow: column;
+	}
+	
+	#elemento2 {
+		order: 1;		
+	}
+
+	#elemento1 {
+		order: 2;
+	}
+
+}
+
+.imgsize {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-item .imgsize {
+	max-height: unset; !important
+}
