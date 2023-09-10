@@ -24,6 +24,31 @@
 	transition: opacity 0.3s ease-in-out;
 }
 
+.imgsize {
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-item .imgsize {
+	max-height: unset; !important
+}
+
+.vertical {
+	writing-mode: vertical-lr;
+	text-orientation: mixed;
+	transform: rotate(180deg);
+	margin-top: 1.5rem;
+}
+
+.card-igual {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: auto;
+}
+
+
 @media(max-width: 770px) {
 	.reversed {
 		/*flex-direction: column-reverse;*/
@@ -39,14 +64,11 @@
 		order: 2;
 	}
 
-}
+	.vertical {
+		writing-mode: horizontal-tb;
+		text-orientation: mixed;
+	  transform: rotate(0deg);
+	  margin-top: 1rem;
+	}
 
-.imgsize {
-  height: 100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navbar-item .imgsize {
-	max-height: unset; !important
 }
