@@ -18,6 +18,23 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="images/logogym.png">
+	<!-- bulma carousel -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="IFITGYM Melipilla">
+	<meta name="description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ifitgym.cl/">
+	<meta property="og:title" content="IFITGYM Melipilla">
+	<meta property="og:description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<meta property="og:image" content="images/portada/maquinas.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ifitgym.cl">
+	<meta property="twitter:title" content="IFITGYM Melipilla">
+	<meta property="twitter:description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<meta property="twitter:image" content="images/portada/maquinas.jpg">
 </head>
 <body>
 	<section class="section">
@@ -73,6 +90,7 @@
 	</section>
 
 	
+<!--
 	<section class="section">
 		<div class="columns">
 			<div class="column is-hidden-mobile">
@@ -90,6 +108,40 @@
 					<img src="images/persona3.jpeg">
 				</figure>
 			</div>
+		</div>
+	</section> -->
+
+	<section class="section">
+		<div class="container">
+			<!-- Start Carousel -->
+			<div id="sliderportada" class="carousel">
+				<div class="item-1 box">
+					<figure class="image">
+						<img src="images/portada/persona1.jpg">
+					</figure>
+				</div>
+				<div class="item-2 box">
+					<figure class="image">
+						<img src="images/portada/persona2.jpg">
+					</figure>
+				</div>
+				<div class="item-3 box">
+					<figure class="image">
+						<img src="images/portada/persona3.jpg">
+					</figure>
+				</div>
+				<div class="item-4 box">
+					<figure class="image">
+						<img src="images/portada/persona4.jpg">
+					</figure>
+				</div>
+				<div class="item-5 box">
+					<figure class="image">
+						<img src="images/portada/persona5.jpg">
+					</figure>
+				</div>
+			</div>
+			<!-- End Carousel -->
 		</div>
 	</section>
 
@@ -184,5 +236,17 @@
 	</footer>
 	<!-- Javascrip -->
 	<script src="js/index.js"></script>
+	<!-- bulma carousel js -->
+	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+	
+<script>
+	bulmaCarousel.attach('#sliderportada', {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			infinite: true,
+			autoplay: true
+		});
+</script>
+
 </body>
 </html>

@@ -80,6 +80,10 @@ ol li:before {
 	font-weight: bold;
 }
 
+.slider-navigation-previous, .slider-navigation-next {
+	color: #2947a1;
+}
+
 @media(max-width: 770px) {
 	.reversed {
 		/*flex-direction: column-reverse;*/
