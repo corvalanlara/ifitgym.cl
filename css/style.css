@@ -71,6 +71,15 @@ ol li:before {
 	content: counters(item, ".") " "; counter-increment: item; 
 }
 
+.palabra {
+	word-break: keep-all;
+}
+
+#webdev {
+	color: #7a1f3d;
+	font-weight: bold;
+}
+
 @media(max-width: 770px) {
 	.reversed {
 		/*flex-direction: column-reverse;*/
