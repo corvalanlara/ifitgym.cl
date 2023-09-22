@@ -24,6 +24,17 @@
 	transition: opacity 0.3s ease-in-out;
 }
 
+.imagenboton2 {
+	box-shadow: 8px -8px 0 -2px #2947a1, 8px -8px 0 0 black;
+	transition: box-shadow 0.3s ease-in-out;
+}
+
+.imagenboton2:hover {
+	box-shadow: 4px -4px 0 -2px #2947a1, 4px -4px 0 0 black;
+	opacity: 0.8;
+	transition: opacity 0.3s ease-in-out;
+}
+
 .imgsize {
   height: 100px;
   margin-left: auto;
@@ -48,6 +59,17 @@
   margin-top: auto;
 }
 
+ol { 
+	counter-reset: item;
+}
+
+ol li { 
+	display: block;
+}
+
+ol li:before { 
+	content: counters(item, ".") " "; counter-increment: item; 
+}
 
 @media(max-width: 770px) {
 	.reversed {
