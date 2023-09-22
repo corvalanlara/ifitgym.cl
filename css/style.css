@@ -84,6 +84,24 @@ ol li:before {
 	color: #2947a1;
 }
 
+#card1 {
+  background-image: url(../images/portada/planes.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-clip: border-box;
+}
+
+#card2 {
+	background-image: url(../images/portada/programas.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-clip: border-box;
+}
+
 @media(max-width: 770px) {
 	.reversed {
 		/*flex-direction: column-reverse;*/
