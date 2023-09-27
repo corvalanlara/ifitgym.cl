@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H27704YW17"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'G-H27704YW17');
-	</script>
-	<!-- end google tag -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>IFITGYM Melipilla</title>
 	<link rel="stylesheet" type="text/css" href="css/bulma.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 	<link rel="icon" type="image/png" href="images/logogym.png">
 	<!-- bulma carousel -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Primary Meta Tags -->
 	<meta name="title" content="IFITGYM Melipilla">
 	<meta name="description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
@@ -35,8 +26,18 @@
 	<meta property="twitter:title" content="IFITGYM Melipilla">
 	<meta property="twitter:description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
 	<meta property="twitter:image" content="images/portada/maquinas.jpg">
+		<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H27704YW17"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-H27704YW17');
+	</script>
+	<!-- end google tag -->
 </head>
-<body>
+<body class="is-clipped">
 	<section class="section">
 		<nav class="navbar" role="navigation" aria-label="main navigation">
   			<div class="navbar-brand has-text-centered">
@@ -88,29 +89,8 @@
 			</div>
 		</div>
 	</section>
-
+	<main>
 	
-<!--
-	<section class="section">
-		<div class="columns">
-			<div class="column is-hidden-mobile">
-				<figure class="image">
-					<img src="images/persona1.jpeg">
-				</figure>
-			</div>
-			<div class="column">
-				<figure class="image">
-					<img src="images/persona2.jpeg">
-				</figure>
-			</div>
-			<div class="column is-hidden-mobile">
-				<figure class="image">
-					<img src="images/persona3.jpeg">
-				</figure>
-			</div>
-		</div>
-	</section> -->
-
 	<section class="section">
 		<div class="container">
 			<!-- Start Carousel -->
@@ -183,13 +163,6 @@
 <p class="subtitle">Sábado</p>
 <p>9:00 a 14:00 hrs.</p>
 				</article>
-				<!--<article class="tile is-child box">
-					<a href="planes.html">
-						<figure class="image imagenboton is-clickable">
-							<img alt="Presiona aquí para conocer nuestros planes" src="images/botonplanes.jpg"/>
-						</figure>
-					</a>
-				</article> -->
 				<article class="tile is-child box">
 					<a href="planes.html">
 						<div id="card1" class="card has-background-info card-igual imagenboton is-clickable">
@@ -208,13 +181,6 @@
 						</div>
 					</a>
 				</article>
-				<!--<article class="tile is-child box">
-					<a href="programas.html">
-						<figure class="image imagenboton is-clickable">
-							<img alt="Presiona aquí para conocer nuestros programas" src="images/botonprogramas.jpg"/>
-						</figure>
-					</a>
-				</article>-->
 			</div>
 		</div>
 		<div class="tile is-ancestor">
@@ -235,13 +201,13 @@
 		</div>
 	</section>
 
-
+	</main>
 	<footer class="footer">
 		<div class="content has-text-centered">
 			<p>Todos los derechos reservados.</p>
 			<p><a href="terminos.html">Términos y condiciones de uso</a></p>
 			<p>Libertad 1006, Melipilla</p>
-			<p>Desarrollado por <a id="webdev" href="https://betarraga.cl">betarraga</a></p>
+			<p>Desarrollado por <a id="webdev" href="https://betarraga.com">betarraga</a></p>
 		</div>
 	</footer>
 	<!-- Javascrip -->
@@ -253,8 +219,8 @@
 	bulmaCarousel.attach('#sliderportada', {
 			slidesToScroll: 1,
 			slidesToShow: 3,
-			infinite: true,
-			autoplay: true
+			autoplay: true,
+			infinite: true
 		});
 </script>
 

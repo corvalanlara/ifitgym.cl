@@ -1,27 +1,6 @@
 {% extends "base.html" %}
 
 {% block contenido %}
-<!--
-	<section class="section">
-		<div class="columns">
-			<div class="column is-hidden-mobile">
-				<figure class="image">
-					<img src="images/persona1.jpeg">
-				</figure>
-			</div>
-			<div class="column">
-				<figure class="image">
-					<img src="images/persona2.jpeg">
-				</figure>
-			</div>
-			<div class="column is-hidden-mobile">
-				<figure class="image">
-					<img src="images/persona3.jpeg">
-				</figure>
-			</div>
-		</div>
-	</section> -->
-
 	<section class="section">
 		<div class="container">
 			<!-- Start Carousel -->
@@ -89,13 +68,6 @@
 				<article class="tile is-child box">
 					{% include "horario.html" %}
 				</article>
-				<!--<article class="tile is-child box">
-					<a href="planes.html">
-						<figure class="image imagenboton is-clickable">
-							<img alt="Presiona aquí para conocer nuestros planes" src="images/botonplanes.jpg"/>
-						</figure>
-					</a>
-				</article> -->
 				<article class="tile is-child box">
 					<a href="planes.html">
 						<div id="card1" class="card has-background-info card-igual imagenboton is-clickable">
@@ -114,13 +86,6 @@
 						</div>
 					</a>
 				</article>
-				<!--<article class="tile is-child box">
-					<a href="programas.html">
-						<figure class="image imagenboton is-clickable">
-							<img alt="Presiona aquí para conocer nuestros programas" src="images/botonprogramas.jpg"/>
-						</figure>
-					</a>
-				</article>-->
 			</div>
 		</div>
 		<div class="tile is-ancestor">
@@ -147,8 +112,8 @@
 	bulmaCarousel.attach('#sliderportada', {
 			slidesToScroll: 1,
 			slidesToShow: 3,
-			infinite: true,
-			autoplay: true
+			autoplay: true,
+			infinite: true
 		});
 </script>
 {% endblock %}
