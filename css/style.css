@@ -1,3 +1,7 @@
+.precio {
+	line-height: 2em;
+}
+
 .hero.has-background {
   position: relative;
   overflow: hidden;
