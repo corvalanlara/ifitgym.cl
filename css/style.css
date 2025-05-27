@@ -2,6 +2,16 @@
 	line-height: 2em;
 }
 
+.linea {
+  margin-bottom: 0.5em;
+}
+
+.linea > span::before {
+  content: "·";
+  margin-right: 0.2em;
+  margin-left: 0.3em;
+}
+
 .hero.has-background {
   position: relative;
   overflow: hidden;
