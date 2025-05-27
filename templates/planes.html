@@ -2,6 +2,14 @@
 
 {% block contenido %}
 	<section class="section">
+		<p><span class="title">Planes libres:</span> Acceso libre a la sala de máquinas y área funcional</p>
+		{% include "planeslibres.html" %}
+	</section>
+	<section class="section">
+		<p><span class="title">Planes guiados:</span> Acceso libre a la sala de máquinas y área funcional + asesoría de un entrenador + evaluación nutricional</p>
+		{% include "planesguiados.html" %}
+	</section>
+	<section class="section">
 		<div class="hero is-medium is-dark has-background">
 			<img alt="Gente entrenando en el gimnasio" class="hero-background is-transparent" src="images/selected/personaentrenando.jpg"/>
   			<div class="hero-body">
@@ -12,18 +20,10 @@
 		</div>
 	</section>
 	<section class="section">
-		<p><span class="title">Planes libres:</span> Acceso libre a la sala de máquinas y área funcional</p>
-		{% include "planeslibres.html" %}
-	</section>
-	<section class="section">
-		<p><span class="title">Planes guiados:</span> Acceso libre a la sala de máquinas y área funcional + asesoría de un entrenador + evaluación nutricional</p>
-		{% include "planesguiados.html" %}
-	</section>
-	<section class="section">
 		<div class="container">
 			<div class="content">
-				<div class="columns">
-					<div class="column">
+				<div class="columns is-multiline">
+					<div class="column is-one-third">
 						<p class="title">Asesorias / Clases</p>
 						<ul>
 							<li>Crossfit</li>
@@ -33,29 +33,35 @@
 							<li>TRX</li>
 						</ul>
 					</div>
-					<div class="column">
+					<div class="column is-one-third">
 						<p class="title">Asesoría Nutricional</p>
-						<p>Servicio de nutrición deportiva</p>
-						<p>Nutrición vegetariana-vegana</p>
+						<p>Evaluación de ingreso gratis</p>
 						<ul>
-							<li>$20.000 primera sesión</li>
-							<li>$15.000 sesión de control</li>
+							<li>$19.990 primera sesión: medición corportal + programa de alimentación</li>
+							<li>$14.990 sesión de control</li>
 						</ul>
-						</br>
+					</div>
+					<div class="column is-one-third">
 						<p class="title">Asesoría Kinesiológica</p>
-						<p>$12.000 por sesión</p>
+						<p>Programa de entrenamiento guiado por kinesiólogo<p>
+						<p>$59.990 mensual</p>
+						<p>$15.990 matrícula</p>
+						<br>
+						<p>Plan de tratamiento con prescripción médica</p>
+						<p>$14.990 por sesión</p>
 						<p>Convenio con Isapres</p>
 					</div>
-					<div class="column">
-						{% include "horario.html" %}
+					<div class="column is-one-third">
+						<p class="title">Convenios, descuentos y planes especiales</p>
+						<ul>
+							<li>Servicio uno a uno. Un entrenador 100% para ti</li>
+							<li>Contamos con convenios con diversas empresas e instituciones</li>
+							<li>Planes prepago con 10% de descuento para estudiantes</li>
+						</ul>
+						<p>Contáctanos para más información</p>
 					</div>
-					<div class="column">
-						<p class="title">Datos bancarios</p>
-						<p>Banco Falabella</p>
-						<p>Cuenta vista</p>
-						<p>N° de cuenta: 5553002520-3</p>
-						<p>RUN: 14.245.902-7</p>
-						<p>Johanna Santis &lt;johannasantis@ifitgym.cl&gt;</p>
+					<div class="column is-one-third">
+						{% include "horario.html" %}
 					</div>
 				</div>
 			</div>
