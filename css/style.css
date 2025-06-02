@@ -28,14 +28,14 @@
 }
 
 .imagenboton {
-	box-shadow: 8px -8px 0 -2px #8AEB32, 8px -8px 0 0 black;
-	transition: box-shadow 0.3s ease-in-out;
+	box-shadow: 12px -12px 0 -2px #8AEB32, 12px -12px 0 0 black;
+	transition: box-shadow 0.6s ease-in-out;
 }
 
 .imagenboton:hover {
 	box-shadow: 4px -4px 0 -2px #8AEB32, 4px -4px 0 0 black;
 	opacity: 0.8;
-	transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.6s ease-in-out;
 }
 
 .imagenboton2 {
